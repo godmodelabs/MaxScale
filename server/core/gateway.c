@@ -1742,7 +1742,7 @@ int main(int argc, char **argv)
          * machine.
          */
 
-	snprintf(datadir,PATH_MAX,"%s/data",get_datadir());
+	snprintf(datadir,PATH_MAX, "%s", get_datadir());
 	datadir[PATH_MAX] = '\0';
 	if(mkdir(datadir, 0777) != 0){
 
@@ -1753,7 +1753,7 @@ int main(int argc, char **argv)
 	    }
 	}
 
-        snprintf(datadir,PATH_MAX, "%s/data/data%d", get_datadir(), getpid());
+        snprintf(datadir,PATH_MAX, "%s/data%d", get_datadir(), getpid());
 
 	if(mkdir(datadir, 0777) != 0){
 
